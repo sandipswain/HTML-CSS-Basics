@@ -1,0 +1,209 @@
+/*External CSS*/
+* {
+    /*resets everything to zero*/
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+/*a:visited {
+    color: white;
+}
+*/
+body {
+    background-color: black;
+    color: tomato;
+    /*font-family: Arial, Helvetica, sans-serifs;
+    font-size: 12px;
+    font-weight: normal;*/
+    font: normal 20px Times New Roman;
+    line-height: 1.6em;
+    /*space betwn lines*/
+    /*id is unique
+    class isn't
+    */
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    /*%makes responsive*/
+    margin: auto;
+}
+
+.button {
+    background-color: #42941c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover {
+    background: orange;
+    color: orangered;
+}
+
+.clr {
+    clear: both;
+    /*to remove the float effect*/
+}
+
+.box-1 {
+    background-color: brown;
+    color: #ffffff;
+    /* border-right: 5px red solid;
+    border-left: 5px blue solid;*/
+    border: 5px blueviolet solid;
+    border-bottom-width: 3px;
+    border-top-style: dotted;
+    border-radius: 8%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /*padding:20px*/
+    margin: 20px 0;
+    /*Margin gives outer space*/
+    /*Padding gives inner space*/
+
+}
+
+.box-1 h1 {
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: .2em;
+    word-spacing: 1em;
+}
+
+.box-2 {
+    border: 3px dotted #cccccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories {
+    border: 1px #cccccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    list-style: none;
+}
+
+.categories li {
+    padding-bottom: 8px;
+    border-bottom: dotted 1px blueviolet;
+    /*list-style-image: url("c2.jpg");*/
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    /*since there are 3*/
+    border: 1px solid #cccccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #333333;
+    color: azure;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box {
+    width: 80%;
+    height: 400px;
+    border: 1px solid blueviolet;
+    margin-top: 30%;
+    position: relative;
+    background-image: url('c2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*applies center horizontally and vertically*/
+    margin-bottom: 20px;
+}
+
+.p-box h1 {
+    position: absolute;
+    top: 40px;
+}
+
+.p-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 5px;
+}
+
+.fix-me {
+    position: fixed;
+    top: 400px;
+}
+
+
+
+.my-list li:first-child {
+    background: red;
+}
+
+.my-list li:last-child {
+    background: blue;
+}
+
+.my-list li:nth-child(5) {
+    background: yellow;
+}
+
+.my-list li:nth-child(even) {
+    background: grey;
+}
